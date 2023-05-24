@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/test.css">
+    <link rel="icon" href="../images/favcon/purple.png" type="image/x-icon">
+    <title> Home </title>
+</head>
+
+<body>
+    <div class="Page Home">
+        <nav>
+            <div class="section"></div>
+            <div class="section menu">
+                <div class="menu-option" id="menu-option1">
+                    <input type="radio" name="menu-toggle" id="bttn-1" checked>
+                    <label for="bttn-1">
+                        <img src="../images/home.png" alt="home" class="menu-icon">
+                        <div class="menu-text">
+                            <p> home </p>
+                        </div>
+                    </label>
+                </div>
+                <div class="menu-option" id="menu-option2">
+                    <input type="radio" name="menu-toggle" id="bttn-2">
+                    <label for="bttn-2">
+                        <img src="../images/login.png" alt="home" class="menu-icon">
+                        <div class="menu-text">
+                            <p> login </p>
+                        </div>
+                    </label>
+                </div>
+                <div class="menu-option" id="menu-option3">
+                    <input type="radio" name="menu-toggle" id="bttn-3">
+                    <label for="bttn-3">
+                        <img src="../images/settings.png" alt="settings" class="menu-icon">
+                        <div class="menu-text">
+                            <p> settings </p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="section"></div>
+        </nav>
+    </div>
+    <div class="Page Login"></div>
+    <div class="Page Settings">
+        <table class="usr-settings">
+            <tr class="top-row">
+                <th>head</th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr class="setting-section">
+                <th class="set">Font</th>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th class="set">Font family</th>
+                <td>
+                    <select name="font-family" id="font-family">
+                        <option value="1"> Arial </option>
+                        <option value="Helvetica"> Helvetica </option>
+                        <option value="Times New Roman"> Times New Roman </option>
+                        <option value="Georgia" selected> Georgia </option>
+                        <option value="Verdana"> Verdana </option>
+                        <option value="Courier New"> Courier New </option>
+                        <option value="Trebuchet MS"> Trebuchet MS </option>
+                    </select>
+                </td>
+                <td>
+                    <button type="button" id="font-family-submit"> Submit </button><br>
+                </td>
+            </tr>
+            <tr>
+                <th class="set">Font size</th>
+                <td>
+                    <select name="font-size" id="font-size">
+                        <option value="12">Extra Small</option>
+                        <option value="14">Small</option>
+                        <option value="18" selected>Medium</option>
+                        <option value="24">Big</option>
+                        <option value="36">Extra Big</option>
+                    </select>
+                </td>
+                <td>
+                    <button type="button" id="font-size-submit"> Submit </button>
+                </td>
+            </tr>
+            <tr class="setting-section">
+                <th class="set">Background</th>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th class="set">Background theme</th>
+                <td>
+                    <select name="background-theme" id="background-theme-select">
+                        <option value="palette1">Purple</option>
+                        <option value="palette2">Blue</option>
+                    </select>
+                </td>
+                <td>
+                    <button type="button" id="background-theme-submit"> Apply </button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <div class="bottom-setting">
+                        <button type="button" id="reset-local-storage"> reset preferences </button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <footer></footer>
+    <script src="styles.js"></script>
+    <script src="main.js"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>

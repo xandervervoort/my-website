@@ -1,0 +1,55 @@
++--------------------------------------+
+|              Database                |
++--------------------------------------+
+| - images: Image[]                    |
++--------------------------------------+
+| + addImage(image: Image): void       |
+| + getImageById(id: int): Image       |
+| + deleteImage(image: Image): void    |
++--------------------------------------+
+
++--------------------------------------+
+|               Image                  |
++--------------------------------------+
+| - id: int                            |
+| - title: string                      |
+| - description: string                |
+| - file: string                       |
++--------------------------------------+
+| + getId(): int                       |
+| + getTitle(): string                 |
+| + getDescription(): string           |
+| + getFile(): string                  |
++--------------------------------------+
+
++--------------------------------------+
+|              Website                 |
++--------------------------------------+
+| - pages: Page[]                      |
++--------------------------------------+
+| + addPage(page: Page): void          |
+| + getPageByTitle(title: string): Page|
+| + deletePage(page: Page): void       |
++--------------------------------------+
+
++--------------------------------------+
+|                Page                  |
++--------------------------------------+
+| - title: string                      |
+| - content: string                    |
++--------------------------------------+
+| + getTitle(): string                 |
+| + getContent(): string               |
++--------------------------------------+
+
++--------------------------------------+
+|            LoginScreen                |
++--------------------------------------+
+| - username: string                   |
+| - password: string                   |
++--------------------------------------+
+| + getUsername(): string              |
+| + getPassword(): string              |
+| + setUsername(username: string): void|
+| + setPassword(password: string): void|
++--------------------------------------+
